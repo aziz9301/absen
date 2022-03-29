@@ -38,9 +38,8 @@ def absen():
     except:
         messagebox.showinfo("Absem", "Absen belum di buka")
 
-# schedule.every().monday.at("11:05").do(absen)
+schedule.every().monday.at("11:05").do(absen)
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
-absen()
+while True:
+    schedule.run_pending()
+    time.sleep(1)
